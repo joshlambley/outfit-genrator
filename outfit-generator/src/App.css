@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+h1 {font-weight: 900; letter-spacing: -2px;}
+.headpiece {width: 5vw;}
+.top {width: 15vw;}
+.bottoms {width: 16vw;}
+.shoes {width: 8vw;}
+/* #cont {position: relative; height: 100vh;} */
+#rdmbtn {margin-bottom: 1rem;}
+.flex-row {display: flex; justify-content: center; align-items: center; margin: auto;}
+.flex-col-1 {display: flex; flex-direction: column; justify-content: center; align-items: center; margin: auto; gap: 1rem;}
+
+/* Light Mode (Default) */
+/* body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: white;
+  color: black;
+} */
+
+
+@media only screen and (max-width: 700px) {
+  .headpiece {width: 10vw;}
+  .top {width: 40vw;}
+  .bottoms {width: 40vw;}
+  .shoes {width: 20vw;}
+}
+
+
